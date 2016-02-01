@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>9:30 Show</title>
+	<link rel="stylesheet" href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css">
+</head>
+<body>
+	<div class="span8">
+    <!-- This is table layout is pulled directly from twitter bootstrap -->
+      <table class="table table-striped">
+        <!--<thead>-->
+          <!--<tr>-->
+            <!--<th>Player ID</th>-->
+          <!--</tr>-->
+        <!--</thead>-->
+        <tbody>
+        <% @players.each do | player | %>
+          <tr>
+            <% player.each do |k,v| %>
+          	    <td><%= v %></td>
+            <% end %>
+          </tr>
+         <% end %>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
